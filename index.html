@@ -7,6 +7,7 @@
 <style>
 :root{--bg1:#fff1f2;--bg2:#ffe9d6;--card:#ffffff;--ink:#3b1f2b;--sub:#a07784;
 --line:#ffe0e4;--g1:#f43f5e;--g2:#fb7c2c;--btn-ink:#ffffff;
+--notice-bg:rgba(255,255,255,.65);--thumb-bg:#fff5f5;
 --shadow:0 6px 20px rgba(244,63,94,.10)}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:linear-gradient(170deg,var(--bg1) 0%,var(--bg2) 100%) fixed;color:var(--ink);
@@ -24,7 +25,7 @@ h1{font-size:24px;font-weight:900;margin-top:12px;letter-spacing:-.5px;
 background:linear-gradient(90deg,var(--g1),var(--g2));
 -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .tagline{font-size:14px;color:var(--sub);margin-top:6px;line-height:1.5;font-weight:600}
-.notice{font-size:11.5px;color:var(--sub);background:rgba(255,255,255,.65);
+.notice{font-size:11.5px;color:var(--sub);background:var(--notice-bg);
 border-radius:12px;padding:9px 12px;margin:4px 0 14px;text-align:center;line-height:1.5}
 .search{width:100%;font-size:15px;padding:13px 16px;border:2px solid transparent;
 border-radius:14px;background:var(--card);color:var(--ink);margin-bottom:16px;outline:none;
@@ -35,8 +36,8 @@ box-shadow:var(--shadow)}
 border-radius:18px;padding:13px;margin-bottom:13px;
 text-decoration:none;color:inherit;transition:transform .08s ease;box-shadow:var(--shadow)}
 .card:active{transform:scale(.98)}
-.thumb{width:92px;height:92px;border-radius:14px;object-fit:cover;background:#fff5f5;flex:none}
-.thumb-fallback{width:92px;height:92px;border-radius:14px;background:#fff0f1;flex:none;
+.thumb{width:92px;height:92px;border-radius:14px;object-fit:cover;background:var(--thumb-bg);flex:none}
+.thumb-fallback{width:92px;height:92px;border-radius:14px;background:var(--thumb-bg);flex:none;
 display:flex;align-items:center;justify-content:center;font-size:32px}
 .info{flex:1;min-width:0}
 .name{font-size:15px;font-weight:700;line-height:1.45;display:-webkit-box;
@@ -52,11 +53,10 @@ box-shadow:0 4px 12px rgba(244,63,94,.35)}
 footer{margin-top:28px;text-align:center;font-size:11px;color:var(--sub);line-height:1.7}
 @media(prefers-color-scheme:dark){
 :root{--bg1:#221019;--bg2:#2a160f;--card:#321b24;--ink:#ffe9ee;--sub:#c99aa6;
---line:#4a2833;--shadow:0 6px 20px rgba(0,0,0,.35)}
-.notice{background:rgba(50,27,36,.65)}
-.thumb,.thumb-fallback{background:#41252f}
+--line:#4a2833;--notice-bg:rgba(50,27,36,.65);--thumb-bg:#41252f;
+--shadow:0 6px 20px rgba(0,0,0,.35)}
 .avatar-fallback{background:var(--card)}}
-:root{--g1:#CE142E;--g2:#003478;}</style>
+:root{--g1:#CE142E;--g2:#003478;--bg1:#F6F5F2;--bg2:#EAE8E2;--card:#FFFFFF;--ink:#1A1A1A;--sub:#8A8478;--line:#E2DFD6;--notice-bg:rgba(255,255,255,.7);--thumb-bg:#F0EEE9;--btn-ink:#ffffff;--shadow:0 6px 20px rgba(0,52,120,.12);}</style>
 </head><body>
 <div class="wrap">
 <header><span class="ring"><img class="avatar" src="avatar.png" alt=""></span><h1>좌팔롬아</h1></header>
